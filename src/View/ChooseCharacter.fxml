@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="display" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ChooseCharacterController">
+   <children>
+      <AnchorPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@mainBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="615.0" layoutY="496.0" mnemonicParsing="false" onAction="#insertDetailsOfMeaze" prefHeight="75.0" prefWidth="244.0" styleClass="blueButton" stylesheets="@mainBackGround.css" text="Spur's Fan" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Champions" size="22.0" />
+               </font>
+               <effect>
+                  <SepiaTone level="0.0" />
+               </effect>
+            </Button>
+            <Button layoutX="96.0" layoutY="496.0" mnemonicParsing="false" onAction="#insertDetailsOfMeaze" prefHeight="75.0" prefWidth="244.0" styleClass="redButton" stylesheets="@mainBackGround.css" text="Liverpool Fan" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Champions" size="22.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="282.0" fitWidth="244.0" layoutX="96.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/liverpool-logo-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="196.0" layoutX="641.0" layoutY="312.0" preserveRatio="true">
+               <image>
+                  <Image url="@/images/lucas-moura-115481810958wbhtuxtuu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="206.0" fitWidth="192.0" layoutX="122.0" layoutY="309.0">
+               <image>
+                  <Image url="@/images/_render_mohamed_sa22lah_by_mo7am4d_dcnb5xl-pre.png" />
+            </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="376.0" layoutY="430.0">
+               <image>
+                  <Image url="@/images/uefa_champions_league.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="238.0" fitWidth="234.0" layoutX="611.0" layoutY="44.0">
+               <image>
+                  <Image url="@/images/totsLogo.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" layoutX="853.0" layoutY="30.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="53.0" prefWidth="99.0" styleClass="backmenu" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Champions Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="86.0" fitWidth="129.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/images/arrow_back_white_192x192.png" />
+                     </image>
+                     <effect>
+                        <Lighting diffuseConstant="0.0" specularConstant="1.72" specularExponent="1.4" surfaceScale="5.22">
+                           <bumpInput>
+                              <InnerShadow />
+                           </bumpInput>
+                           <light>
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="873.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back" textAlignment="CENTER" wrappingWidth="65.4921875">
+               <font>
+                  <Font name="Champions Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="1.25" specularConstant="0.44" specularExponent="0.0" surfaceScale="7.7">
+                     <light>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

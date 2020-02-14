@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="240.0" prefWidth="443.0" styleClass="inputDeatils" stylesheets="@mainBackGround.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.inputDeatilsOfMazeController">
+   <children>
+      <Button fx:id="closeButton" layoutX="254.0" layoutY="197.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="34.0" prefWidth="120.0" styleClass="root2" stylesheets="@controlDesign.css" text="Cancel" textFill="WHITE" />
+      <TextField fx:id="col" layoutX="143.0" layoutY="71.0" prefHeight="25.0" prefWidth="61.0" />
+      <TextField fx:id="rows" layoutX="143.0" layoutY="36.0" prefHeight="25.0" prefWidth="61.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="29.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter rows:">
+         <font>
+            <Font name="Champions Bold" size="15.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="29.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter columns:">
+          <font>
+              <Font name="Champions Bold" size="15.0" />
+          </font></Text>
+      <Button layoutX="77.0" layoutY="197.0" mnemonicParsing="false" onAction="#getnerateMaze" prefHeight="34.0" prefWidth="120.0" styleClass="root2" text="Generate Maze" textFill="WHITE">
+         <stylesheets>
+            <URL value="@controlDesign.css" />
+         </stylesheets></Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

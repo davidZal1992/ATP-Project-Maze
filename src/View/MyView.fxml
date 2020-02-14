@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="680.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
+    <top>
+        <MenuBar fx:id="menuBar" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="1184.0" stylesheets="@mainBackGround.css" BorderPane.alignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <menus>
+                <Menu mnemonicParsing="false" styleClass="menu-item" text="File">
+                    <items>
+                        <MenuItem fx:id="newMenuIream" mnemonicParsing="false" onAction="#characterSelect" text="New...">
+                            <styleClass>
+                                <String fx:value="label" />
+                                <String fx:value="menu-item" />
+                            </styleClass>
+                        </MenuItem>
+                        <MenuItem fx:id="saveMenuIteam" disable="true" mnemonicParsing="false" onAction="#save" text="Save..." />
+                        <MenuItem fx:id="loadMenuIteam" mnemonicParsing="false" onAction="#load" text="Load..." />
+                        <SeparatorMenuItem mnemonicParsing="false" styleClass="menu-item" text="Exit" />
+                        <MenuItem mnemonicParsing="false" onAction="#Exit" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Options">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Properties">
+                            <items>
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <Menu mnemonicParsing="false" text="Search">
+                                    <items>
+                                        <fx:define>
+                                            <ToggleGroup fx:id="search" />
+                                        </fx:define>
+                                        <RadioMenuItem fx:id="best" mnemonicParsing="false" onAction="#selectSearchingAlgo" selected="true" text="BEST" toggleGroup="$search" />
+                                        <RadioMenuItem fx:id="BFS" mnemonicParsing="false" onAction="#selectSearchingAlgo" text="BFS" toggleGroup="$search" />
+                                        <RadioMenuItem fx:id="DFS" mnemonicParsing="false" onAction="#selectSearchingAlgo" text="DFS" toggleGroup="$search" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Generate">
+                                    <items>
+                                        <fx:define>
+                                            <ToggleGroup fx:id="generate" />
+                                        </fx:define>
+                                        <RadioMenuItem fx:id="empty" mnemonicParsing="false" onAction="#selectGenerateAlgo" text="Empty Maze" toggleGroup="$generate" />
+                                        <RadioMenuItem fx:id="simple" mnemonicParsing="false" onAction="#selectGenerateAlgo" text="Simple Maze" toggleGroup="$generate" />
+                                        <RadioMenuItem fx:id="complicated" mnemonicParsing="false" onAction="#selectGenerateAlgo" selected="true" text="Complicated Maze" toggleGroup="$generate" />
+                                    </items>
+                                </Menu>
+                            </items></Menu>
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <Menu mnemonicParsing="false" text="Sound">
+                            <items>
+                                <RadioMenuItem fx:id="musicButton" mnemonicParsing="false" onAction="#OnOffStartMusic" text="Off" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#help" text="Help" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#About" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+            <styleClass>
+                <String fx:value="context-menu" />
+                <String fx:value="menu-item" />
+                <String fx:value="label" />
+            </styleClass>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane fx:id="rootPane" styleClass="root" stylesheets="@mainBackGround.css" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="start" cacheShape="false" graphicTextGap="0.0" layoutX="22.0" layoutY="108.0" mnemonicParsing="false" onAction="#characterSelect" pickOnBounds="false" prefHeight="69.0" prefWidth="323.0" scaleShape="false" stylesheets="@mainBackGround.css" text="Start" textFill="WHITE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="toggle-button" />
+                        <String fx:value="cup" />
+                    </styleClass>
+                </Button>
+                <Button fx:id="load" contentDisplay="TOP" graphicTextGap="0.0" layoutX="23.0" layoutY="237.0" mnemonicParsing="false" onAction="#load" pickOnBounds="false" prefHeight="69.0" prefWidth="323.0" styleClass="toggle-button" stylesheets="@mainBackGround.css" text="Load" textFill="WHITE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <ImageView fx:id="music" accessibleRole="MENU_ITEM" fitHeight="56.0" fitWidth="59.0" layoutX="34.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/cup.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="35.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/images(1).png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="348.0" fitWidth="355.0" layoutX="282.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/kane_png_744800.png" />
+                    </image>
+                    <effect>
+                        <InnerShadow choke="0.12" height="18.03" radius="12.965" width="35.83" />
+                    </effect>
+                </ImageView>
+                <Button contentDisplay="TOP" graphicTextGap="0.0" layoutX="26.0" layoutY="366.0" mnemonicParsing="false" onAction="#About" pickOnBounds="false" prefHeight="69.0" prefWidth="323.0" styleClass="toggle-button" stylesheets="@mainBackGround.css" text="About" textFill="WHITE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <Button contentDisplay="TOP" graphicTextGap="0.0" layoutX="26.0" layoutY="500.0" mnemonicParsing="false" onAction="#Exit" pickOnBounds="false" prefHeight="69.0" prefWidth="323.0" styleClass="toggle-button" stylesheets="@mainBackGround.css" text="Exit" textFill="WHITE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="315.0" fitWidth="354.0" layoutX="609.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/dtp1dl1534767233.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="46.0" fitWidth="50.0" layoutX="40.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/images(5).png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="58.0" layoutX="40.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/about-us-icon-png-white-1.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

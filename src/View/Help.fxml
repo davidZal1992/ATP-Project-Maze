@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.HelpController">
+   <children>
+      <ImageView fitHeight="742.0" fitWidth="1053.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/About.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="126.0" fitWidth="215.0" layoutX="182.0" layoutY="-69.0">
+         <image>
+            <Image url="@/images/uefa_champions_league.png" />
+         </image>
+      </ImageView>
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="35.0" layoutY="38.0" prefHeight="686.0" prefWidth="516.0" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane prefHeight="1321.0" prefWidth="548.0" styleClass="help" stylesheets="@MazeDisplyGrass.css">
+               <children>
+                  <Text layoutX="118.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UEFA Champions Maze" underline="true">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="21.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to UEFA Champions Maze!" />
+                  <Text layoutX="20.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Think you are the champion of solve mazes? Come try your luck and see if you can crown your self and hold the record of best  maze solver of &quot;UEFA&quot;." wrappingWidth="381.68359375" />
+                  <ImageView layoutX="-9.0" layoutY="170.0">
+                     <image>
+                        <Image url="@/images/POINT.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text layoutX="21.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Before Start" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="20.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Once the game is launch, you have the option to choose the level at which you will generate the maze." wrappingWidth="337.021484375" />
+                  <Text layoutX="20.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the top menu bar, under Options , you can find your generatign levels:" wrappingWidth="382.021484375" />
+                  <ImageView layoutX="-9.0" layoutY="344.0">
+                     <image>
+                        <Image url="@/images/POINT.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="19.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empyu Maze will generate you empty maze with Start and Goal positions , nice practice for beginners." wrappingWidth="433.13671875" />
+                  <ImageView layoutX="-9.0" layoutY="382.0">
+                     <image>
+                        <Image url="@/images/POINT.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="19.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simple Maze will generate you randomy walls , you can practice before you become expert." wrappingWidth="443.13671875" />
+                  <ImageView layoutX="-9.0" layoutY="419.0">
+                     <image>
+                        <Image url="@/images/POINT.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="19.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complicated Maze will generate you maze by &quot;Prim&quot; algorithm, this will provide you perfect maze and can be very diffuclt to solve. Good luck" wrappingWidth="500.13671875" />
+                  <Text layoutX="19.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gameplay" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="-8.0" layoutY="491.0">
+                     <image>
+                        <Image url="@/images/POINT.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="19.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="After start the Game , now you need to choose your character ." />
+                  <Text layoutX="10.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If your Liverpool fan , choose Liverpool , else choose Spurs fan. this will influence on your wall color. " wrappingWidth="529.201171875" />
+                  <Text layoutX="15.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move options" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text layoutX="285.0" layoutY="768.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Down-Right" />
+                  <Text layoutX="9.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spurs agains red wall ( Liverpool Color) and Liverpoos choise will make your wall in Spurs color , exactly as final of uefa champions leagu." wrappingWidth="491.60546875" />
+                  <ImageView layoutX="99.0" layoutY="640.0">
+                     <image>
+                        <Image url="@/images/num7.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="22.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Up-Left" />
+                  <Text layoutX="160.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move up" />
+                  <Text layoutX="285.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Up-Right" />
+                  <ImageView layoutX="100.0" layoutY="733.0">
+                     <image>
+                        <Image url="@/images/‏‏DOWN.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="9.0" layoutY="768.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Down-Left" />
+                  <Text layoutX="164.0" layoutY="814.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move down" />
+                  <ImageView layoutX="100.0" layoutY="829.0">
+                     <image>
+                        <Image url="@/images/‏LET.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="102.0" layoutY="912.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move left" />
+                  <ImageView layoutX="208.0" layoutY="830.0">
+                     <image>
+                        <Image url="@/images/‏RIGHT.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="210.0" layoutY="912.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move right" />
+                  <Text layoutX="22.0" layoutY="959.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solving Options" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="-9.0" layoutY="963.0">
+                     <image>
+                        <Image url="@/images/POINT.JPG" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="23.0" layoutY="978.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you get in troube , and find the way to cup, you can use the &quot;Solve&quot; button in left of screen to get directions for a solution. Anytime you can hide the solution by pressing &quot;Hide&quot;." wrappingWidth="348.345703125" />
+                  <Text layoutX="24.0" layoutY="1028.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can choose the algorithm for solve your maze by choosing &quot;Options -&gt; Properties&quot;" wrappingWidth="467.14453125" />
+                  <ImageView fitHeight="84.0" fitWidth="200.0" layoutX="22.0" layoutY="1035.0">
+                     <image>
+                        <Image url="@/images/PROP.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="24.0" layoutY="1142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For more information about the algorithm you can find in &quot;About&quot; tab." />
+                  <Text layoutX="24.0" layoutY="1191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enjoy." />
+                  <ImageView layoutX="21.0" layoutY="250.0">
+                     <image>
+                        <Image url="@/images/2.JPG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

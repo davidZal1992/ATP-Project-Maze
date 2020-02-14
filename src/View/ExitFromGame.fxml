@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.Button?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.0" prefWidth="314.0" styleClass="root" stylesheets="@mainBackGround.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="65.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure you want to exit?" textAlignment="JUSTIFY" wrappingWidth="187.365234375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="bt1" layoutX="93.0" layoutY="80.0" mnemonicParsing="false" styleClass="toggle-button" text="Yes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt2" layoutX="192.0" layoutY="80.0" mnemonicParsing="false" styleClass="toggle-button" stylesheets="@mainBackGround.css" text="No" textFill="WHITE" />
+   </children>
+</AnchorPane>
